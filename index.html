@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Attendance Management System (SAMS) — a simple, reliable way for universities to track attendance, monitor student engagement, and generate reports.">
+    <meta name="author" content="SAMS Team">
+    <meta name="keywords" content="student attendance, university, SAMS, education, attendance system">
+    <title>SAMS — Student Attendance Management System</title>
+
+    <!-- External stylesheets (loaded in order: base → layout → forms → responsive) -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ================= SITE HEADER ================= -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-logo">SA</span>
+                <span>SAMS</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/dashboard.html">Dashboard</a></li>
+                    <li><a href="pages/students.html">Students</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ----- Hero section ----- -->
+        <section class="hero" id="top">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>Attendance, simplified.</h1>
+                    <p>
+                        SAMS is a clean, classroom-friendly attendance management system built
+                        for universities and colleges. Mark attendance in seconds, track patterns
+                        across the semester, and give every student a clear picture of where they stand.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="pages/dashboard.html" class="btn btn-primary">Open Dashboard</a>
+                        <a href="#features" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="hero-illustration">
+                    <figure>
+                        <!-- Inline SVG used as a hero illustration (no external image needed) -->
+                        <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Attendance dashboard preview">
+                            <rect x="0" y="0" width="400" height="280" rx="12" fill="#ffffff"/>
+                            <rect x="20" y="20" width="360" height="40" rx="6" fill="#dbeafe"/>
+                            <circle cx="40" cy="40" r="10" fill="#1d4ed8"/>
+                            <rect x="60" y="34" width="120" height="6" rx="3" fill="#1e3a8a"/>
+                            <rect x="60" y="44" width="80" height="5" rx="2" fill="#94a3b8"/>
+
+                            <!-- 3 stat cards -->
+                            <rect x="20" y="80" width="105" height="60" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+                            <rect x="30" y="92" width="60" height="6" rx="3" fill="#94a3b8"/>
+                            <text x="30" y="125" font-family="Georgia" font-size="22" fill="#1e3a8a" font-weight="bold">94%</text>
+
+                            <rect x="147" y="80" width="105" height="60" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+                            <rect x="157" y="92" width="60" height="6" rx="3" fill="#94a3b8"/>
+                            <text x="157" y="125" font-family="Georgia" font-size="22" fill="#16a34a" font-weight="bold">218</text>
+
+                            <rect x="274" y="80" width="105" height="60" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+                            <rect x="284" y="92" width="60" height="6" rx="3" fill="#94a3b8"/>
+                            <text x="284" y="125" font-family="Georgia" font-size="22" fill="#dc2626" font-weight="bold">12</text>
+
+                            <!-- Bar chart -->
+                            <rect x="20" y="160" width="360" height="100" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+                            <rect x="50"  y="220" width="22" height="30" fill="#1d4ed8"/>
+                            <rect x="90"  y="200" width="22" height="50" fill="#1d4ed8"/>
+                            <rect x="130" y="180" width="22" height="70" fill="#1d4ed8"/>
+                            <rect x="170" y="190" width="22" height="60" fill="#1d4ed8"/>
+                            <rect x="210" y="210" width="22" height="40" fill="#0ea5e9"/>
+                            <rect x="250" y="195" width="22" height="55" fill="#0ea5e9"/>
+                            <rect x="290" y="175" width="22" height="75" fill="#0ea5e9"/>
+                            <rect x="330" y="205" width="22" height="45" fill="#0ea5e9"/>
+                        </svg>
+                        <figcaption>Real-time attendance overview at a glance.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- Features section (Grid layout) ----- -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Why teachers and students choose SAMS</h2>
+                    <p class="text-muted">Built around the realities of university classrooms — not an overgrown spreadsheet.</p>
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Mark in Seconds</h3>
+                        <p>Take attendance for a 40-student class in under a minute with a clean, keyboard-friendly form.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Live Statistics</h3>
+                        <p>Daily, weekly and per-course attendance percentages update the moment a session is saved.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h3>Student Profiles</h3>
+                        <p>Every student gets a simple profile showing their record, status, and warning thresholds.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">📁</div>
+                        <h3>Exportable Reports</h3>
+                        <p>Generate clean reports per course, per student, or per semester — ready to share with admin.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- About / two column section (Flexbox) ----- -->
+        <section class="section section-soft">
+            <div class="container">
+                <div class="two-col">
+
+                    <article class="col-main">
+                        <h2>About this Project</h2>
+                        <p>
+                            <strong>SAMS</strong> began as a coursework project for our Web Programming module,
+                            but quickly grew into something we actually wanted to use.
+                            Most attendance tools we tried were either heavy enterprise systems or one-off
+                            spreadsheets that nobody updated past week three. We aimed for something in between:
+                            <em>simple enough to actually use every class, structured enough to trust at exam time</em>.
+                        </p>
+
+                        <p>
+                            This first release focuses on the front-end — the structure, layout and visual design
+                            of the system. The pages you see across the site are static, but they reflect the real
+                            screens a future version of SAMS would have: a dashboard for instructors, a student list
+                            with attendance marking, and a contact channel for support.
+                        </p>
+
+                        <blockquote>
+                            "An attendance system should disappear into the background of a class — not become
+                            another thing the instructor has to manage."
+                        </blockquote>
+
+                        <h3>What the system covers</h3>
+                        <ol>
+                            <li>Daily attendance marking for individual courses.</li>
+                            <li>Per-student attendance history and trends.</li>
+                            <li>Configurable warning thresholds (e.g. below 75%).</li>
+                            <li>Printable course-level summary reports.</li>
+                        </ol>
+                    </article>
+
+                    <aside class="col-side" aria-label="Quick facts">
+                        <h3>Quick facts</h3>
+                        <dl>
+                            <dt><strong>Project type</strong></dt>
+                            <dd>Academic / coursework</dd>
+
+                            <dt class="mt-2"><strong>Course</strong></dt>
+                            <dd>Web Programming</dd>
+
+                            <dt class="mt-2"><strong>Stack</strong></dt>
+                            <dd>HTML &amp; CSS only (Deliverable 2)</dd>
+
+                            <dt class="mt-2"><strong>Pages</strong></dt>
+                            <dd>4 (Home, Dashboard, Students, Contact)</dd>
+
+                            <dt class="mt-2"><strong>Status</strong></dt>
+                            <dd><span class="badge badge-present">In Development</span></dd>
+                        </dl>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- Team section ----- -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">Meet the Team</h2>
+                <p class="text-center text-muted">Four students, one shared GitHub branch policy.</p>
+
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="team-avatar">M1</div>
+                        <h4>Member One</h4>
+                        <p class="role">Front-end · Layout</p>
+                        <small>Home &amp; About sections</small>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">M2</div>
+                        <h4>Member Two</h4>
+                        <p class="role">UI · Dashboard</p>
+                        <small>Stats &amp; tables</small>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">M3</div>
+                        <h4>Member Three</h4>
+                        <p class="role">Forms · Validation UI</p>
+                        <small>Students &amp; Contact</small>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">M4</div>
+                        <h4>Member Four</h4>
+                        <p class="role">CSS · Responsive</p>
+                        <small>Styling &amp; mobile</small>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= SITE FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div>
+                    <h4>SAMS</h4>
+                    <p><small>A clean, classroom-first attendance management system. Built for universities, by students.</small></p>
+                </div>
+
+                <div>
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/dashboard.html">Dashboard</a></li>
+                        <li><a href="pages/students.html">Students</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="pages/contact.html#faq">FAQ</a></li>
+                        <li><a href="https://www.w3.org/standards/" target="_blank" rel="noopener">Web Standards ↗</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener">Project on GitHub ↗</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:sams.team@example.edu">sams.team@example.edu</a></li>
+                        <li>Course: Web Programming</li>
+                        <li>Deliverable: 2 (HTML &amp; CSS)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <time datetime="2026">2026</time> SAMS Project Team. Built for educational use.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
